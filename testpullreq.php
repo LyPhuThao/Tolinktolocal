@@ -52,7 +52,7 @@ if(isset($_FILES['image'])){
 						$error[] = 'You forgot to enter the area (m2).';
 						}	
 //Check district
-				$dist= filter_var($_POST['district'], FILTER_SANITIZE_STRING);
+				//$dist= filter_var($_POST['district'], FILTER_SANITIZE_STRING);
 					if (empty($dist)){
 						$error[] = 'You forgot to enter the district.';
 						} 
