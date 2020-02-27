@@ -1,8 +1,8 @@
 <?php
 	// Connect to the db.
-require('connectmysql.php');
+/*require('connectmysql.php');
 	//Define some global variables
-if (isset($_POST['submit']))
+if (isset($_POST['submit']))*/
 	{
 $out= " ";
 //$file = $_FILES['image'];
