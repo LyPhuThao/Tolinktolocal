@@ -5,7 +5,7 @@ require('connectmysql.php');
 if (isset($_POST['submit']))
 	{
 $out= " ";
-//$file = $_FILES['image'];
+$file = $_FILES['image'];
 $fileName = $file['name'];
 $tmpName = $file ['tmp_name'];
 $fileType = $file['type'];
