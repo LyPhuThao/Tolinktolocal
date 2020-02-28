@@ -17,7 +17,7 @@ require_once 'Includes/autoloader.php';
 	if (filter_has_var(INPUT_POST, 'submit')) {
 		$required = array('image[]','area', 'district', 'address', 'transaction', 'price',
 			'contact_time', 'phone', 'cusname', 'email', 'description');
-		$val = new Validator($required);
+		//$val = new Validator($required);
 		$val->isFullURL('image[]');
 		$val->isInt('area',null,500);
 		$val->checkTextLength('district', 1, 20);
@@ -43,7 +43,7 @@ require_once 'Includes/autoloader.php';
 							
 							//$q = mysqli_stmt_init($conn);
 
-							$loader = new Upload('C:/xampp/htdocs/workspace/IMAGE');
+							//$loader = new Upload('C:/xampp/htdocs/workspace/IMAGE');
 							$loader -> upload('image');
 							$names = $loader->getFileNames();											
 								if ($names){ 	require ('connectmysql.php');
